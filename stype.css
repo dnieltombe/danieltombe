@@ -1,0 +1,14 @@
+    body {
+        min-height: 100vh;
+        background-image: url("imagenes/3.avif");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        color: #181616;
+        folder corner-end-start-shape: display: 10´x;
+       
+        
+        }
