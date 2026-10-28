@@ -3,38 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>joyeria kaliz</title>
-    <link rel="stylesheet"  type="text/css" href="stype.css">   
-
+    <title>lOGIN </title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <div class="form-container">
-    <form>
-        <h1>Iniciar Sesion</h1>
-    
-        <label> seleccione su tipo de ducomento</label>
-        <br>
-        <select name="xyz">
-            <option value="cc">cedula de ciudadania</option>/
-            <option value="TI">targeta de identidad</option>/
-            <option value="ce">cedula de extranjeria</option>/
-            <option value="pasaporte ">pasaporte</option>
-        </select>
-        <br><br>
-        <label>Ingrese su documento:</label>
-        <br>
-        <input type="number" name="id_usu" requerid> 
-        <br><br>
-        <label>Ingrese su contraseña:</label>
-        <br>
-        <input type="password" name="pass_usu" requerid>
-        <br><br> 
-        <button type="submit">Ingresar</button>
-        <br><br>
-        <a href="olvide_pass.html">olvide mi contraseña?</a>
+<body>
 
+    <div class="login-container">
+
+        <div class="brand-header">
+            <div class="logo">✦</div>
+            <h1>KALIZ</h1>
+            <p class="subtitle"> JOYERÍA</p>
         </div>
-    </form>
+
+        <form class="login-form" action="2.html">
+      
+            <div class="input-group">
+                <label for="doc-type">Tipo de Documento</label>
+                <div class="select-wrapper">
+                    <select id="doc-type" required>
+                        <option value="" disabled selected hidden>Seleccione su documento</option>
+                        <option value="CC">Cédula de Ciudadanía</option>
+                        <option value="CE">Cédula de Extranjería</option>
+                        <option value="PAS">Pasaporte</option>
+                        <option value="NIT">NIT (Empresas)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="doc-id">Número de Identificación</label>
+                <input type="text" id="doc-id" placeholder="Ingrese su ID" inputmode="numeric" required>
+            </div>
+
+            <div class="input-group">
+                <div class="password-label-row">
+                    <label for="password">Contraseña</label>
+                    <a href="#" class="forgot-link">¿Olvidó su contraseña?</a>
+                </div>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="remember-group">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Recordar mis datos</label>
+            </div>
+            
+            <button type="submit" class="btn-submit">INGRESAR</button>
+        </a>
+        </form>
+
+        <div class="form-footer">
+            <p>¿No tiene una cuenta? <a href="inicio.html" class="register-link">Crear una cuenta</a></p>
+            
+        </div>
+    </div>
 
 </body>
 </html>
